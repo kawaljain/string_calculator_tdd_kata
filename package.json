@@ -1,0 +1,30 @@
+{
+  "name": "string_calculator_tdd_kata",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kawaljain/string_calculator_tdd_kata.git"
+  },
+  "keywords": [
+    "String",
+    "Calculator",
+    "TDD",
+    "Approach"
+  ],
+  "author": "Kawal Jain",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kawaljain/string_calculator_tdd_kata/issues"
+  },
+  "homepage": "https://github.com/kawaljain/string_calculator_tdd_kata#readme",
+  "dependencies": {
+    "chai": "^5.1.2",
+    "mocha": "^11.0.1"
+  }
+}
