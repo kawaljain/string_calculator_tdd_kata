@@ -34,4 +34,12 @@ describe("String Calculator", () => {
       expect(calculator.add("//;\n1;2")).to.equal(3);
     });
   });
+
+  describe("Handle negative number will throw error", () => {
+    it("return error, when given number is 1,-2,3", () => {
+      expect(function () {
+        calculator.add("1,-2,3");
+      }).to.throw("Negatives not allowed.");
+    });
+  });
 });
