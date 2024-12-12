@@ -7,4 +7,11 @@ describe("String Calculator", () => {
     let calculator = new StringCalculator();
     expect(calculator.add("")).to.equal(0);
   });
+
+  describe("Returns the number itself if only one number is provided", () => {
+    it("return 1, when given number is 1", () => {
+      let calculator = new StringCalculator();
+      expect(calculator.add("1")).to.equal(1);
+    });
+  });
 });
