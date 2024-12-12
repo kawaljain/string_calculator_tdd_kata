@@ -3,6 +3,12 @@
 This is a simple implementation of a String Calculator in Node.js, developed using Test-Driven Development (TDD) principles. 
 
 ---
+## Pre-requisites
+
+- [Node.js](https://nodejs.org/)
+- [npm](https://www.npmjs.com/)
+
+---
 
 ## Requirement:
 
@@ -14,6 +20,28 @@ This is a simple implementation of a String Calculator in Node.js, developed usi
 -   **Negative Number**: Calling Add with a negative number will throw an exception “negatives not allowed.”. 
 
 ---
+
+## Setup
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/kawaljain/string_calculator_tdd_kata.git
+   cd string_calculator_tdd_kata
+   ```
+
+1. **Install dependencies:**
+
+    ```bash
+    npm install
+    ```
+
+2. **Run the tests:**
+
+    ```bash
+    npm test
+    ```
+
 
 ## TDD Approach
 
