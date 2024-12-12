@@ -7,6 +7,9 @@ class StringCalculator {
     if (numArray.length <= 1) {
       return parseInt(numbers);
     }
+    let sum = 0;
+    sum = numArray.reduce((x, y) => parseInt(x) + parseInt(y), sum);
+    return sum;
   }
 }
 
