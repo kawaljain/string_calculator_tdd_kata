@@ -31,7 +31,7 @@ describe("String Calculator", () => {
 
   describe("Handle custom delimiters", () => {
     it("return 6, when given number is //;\n1;2", () => {
-      expect(calculator.add("//;\n1;2")).to.equal(6);
+      expect(calculator.add("//;\n1;2")).to.equal(3);
     });
   });
 });

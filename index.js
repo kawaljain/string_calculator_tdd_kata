@@ -1,9 +1,9 @@
 class StringCalculator {
-  getSplitNumber = (numbers = "") => {
+  getSplitNumber = (numbers = "", delimiters = /,|\n/) => {
     let numberList = [];
-    let regexMatch = /,|\n/;
+
     for (let i = 0; i < numbers.length; i++) {
-      if (!numbers[i].match(regexMatch)) {
+      if (!numbers[i].match(delimiters)) {
         numberList.push(parseInt(numbers[i]));
       }
     }
@@ -14,8 +14,16 @@ class StringCalculator {
     if (!numbers) {
       return 0;
     }
+    let delimiters = /,|\n/;
+    if (numbers.startsWith("//")) {
+      let customDelimiters = numbers[2]; // always on 2 position as the requirement
 
-    const numArray = this.getSplitNumber(numbers);
+      delimiters = new RegExp(`${customDelimiters}|\n`);
+      numbers = numbers.slice(3);
+    }
+
+    const numArray = this.getSplitNumber(numbers, delimiters);
+
     if (numArray.length <= 1) {
       return parseInt(numbers);
     }
