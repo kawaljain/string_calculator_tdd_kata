@@ -25,6 +25,5 @@ class StringCalculator {
     return sum;
   }
 }
-let calculator = new StringCalculator();
-calculator.getSplitNumber("1\n2,3");
+
 export default StringCalculator;
