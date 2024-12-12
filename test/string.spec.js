@@ -22,4 +22,9 @@ describe("String Calculator", () => {
       expect(calculator.add("1,2,3")).to.equal(6);
     });
   });
+  describe("Handle new line between number ", () => {
+    it("return 6, when given number is 1\n2,3", () => {
+      expect(calculator.add("1\n2,3")).to.equal(6);
+    });
+  });
 });
