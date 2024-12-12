@@ -16,4 +16,10 @@ describe("String Calculator", () => {
       expect(calculator.add("1")).to.equal(1);
     });
   });
+
+  describe("Returns the sum of numbers separted by comas", () => {
+    it("return 6, when given number is 1,2,3", () => {
+      expect(calculator.add("1,2,3")).to.equal(6);
+    });
+  });
 });
